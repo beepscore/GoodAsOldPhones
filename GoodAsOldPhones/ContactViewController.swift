@@ -21,6 +21,7 @@ class ContactViewController: UIViewController, UIScrollViewDelegate {
     }
 
     override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
         // this looks ok in portrait but is too narrow for landscape
         scrollView.contentSize = CGSizeMake(375, 800)
     }
