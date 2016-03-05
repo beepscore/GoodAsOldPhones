@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ContactViewController: UIViewController {
+class ContactViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
