@@ -27,18 +27,27 @@
                                     <constraint firstAttribute="height" constant="56" id="VVl-Ll-mhU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="DamascusBold" family="Damascus" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ue-T1-8xd">
+                                <rect key="frame" x="109" y="245" width="159" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="9I9-9B-Bku"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="button-addtocart"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rsS-OG-hOf" firstAttribute="top" secondItem="ggi-wq-dqa" secondAttribute="top" id="2d9-Ub-Tkj"/>
                             <constraint firstAttribute="trailing" secondItem="rsS-OG-hOf" secondAttribute="trailing" id="EvP-c3-9Ag"/>
+                            <constraint firstItem="6Ue-T1-8xd" firstAttribute="centerX" secondItem="ggi-wq-dqa" secondAttribute="centerX" id="Juv-6d-0mz"/>
                             <constraint firstItem="DaA-IT-y4X" firstAttribute="top" secondItem="rsS-OG-hOf" secondAttribute="bottom" id="Kp5-Rl-G5H"/>
                             <constraint firstItem="IAd-WR-8A4" firstAttribute="trailing" secondItem="ggi-wq-dqa" secondAttribute="trailingMargin" id="KqP-ek-22n"/>
                             <constraint firstItem="IAd-WR-8A4" firstAttribute="leading" secondItem="ggi-wq-dqa" secondAttribute="leadingMargin" id="RtK-IZ-DhU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rsS-OG-hOf" secondAttribute="trailing" id="dFu-qC-7si"/>
+                            <constraint firstItem="6Ue-T1-8xd" firstAttribute="top" secondItem="IAd-WR-8A4" secondAttribute="bottom" constant="19" id="dxv-hv-r0L"/>
                             <constraint firstItem="rsS-OG-hOf" firstAttribute="leading" secondItem="ggi-wq-dqa" secondAttribute="leading" id="iq5-V9-8xB"/>
                             <constraint firstItem="IAd-WR-8A4" firstAttribute="top" secondItem="fXg-T5-niH" secondAttribute="bottom" constant="150" id="kOL-mo-RJU"/>
                             <constraint firstItem="rsS-OG-hOf" firstAttribute="leading" secondItem="ggi-wq-dqa" secondAttribute="leadingMargin" id="n9R-ll-p2O"/>
@@ -64,6 +73,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="button-addtocart" width="158" height="41"/>
         <image name="phone-fullscreen3" width="375" height="667"/>
     </resources>
 </document>
