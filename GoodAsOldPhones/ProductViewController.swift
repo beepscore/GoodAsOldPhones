@@ -10,7 +10,7 @@ import UIKit
 
 class ProductViewController: UIViewController {
 
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var productNameLabel: UILabel!
 
     @IBAction func addToCartButtonTapped(sender: AnyObject) {
         print("add tapped")

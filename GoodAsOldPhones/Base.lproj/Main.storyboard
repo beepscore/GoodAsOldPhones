@@ -70,7 +70,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="label" destination="IAd-WR-8A4" id="hvb-FG-IQj"/>
+                        <outlet property="productNameLabel" destination="IAd-WR-8A4" id="356-ny-4mO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lV9-pe-2kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
