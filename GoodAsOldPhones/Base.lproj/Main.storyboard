@@ -36,6 +36,9 @@
                                     <constraint firstAttribute="width" constant="159" id="9I9-9B-Bku"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="button-addtocart"/>
+                                <connections>
+                                    <action selector="addToCartButtonTapped:" destination="5Pj-me-KOJ" eventType="touchUpInside" id="Gjg-1W-IXb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -66,6 +69,9 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label" destination="IAd-WR-8A4" id="hvb-FG-IQj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lV9-pe-2kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
