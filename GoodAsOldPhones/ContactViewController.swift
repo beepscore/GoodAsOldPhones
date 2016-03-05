@@ -11,11 +11,13 @@ import UIKit
 class ContactViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var scrollView: UIScrollView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // In storyboard, scrollView is a sibling of view, not a child
+        // Programmatically add scrollView as a subView so it is a child
+        view.addSubview(scrollView)
     }
 
 }
