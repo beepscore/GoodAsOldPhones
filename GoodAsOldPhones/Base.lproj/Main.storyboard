@@ -30,8 +30,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ue-T1-8xd">
-                                <rect key="frame" x="109" y="245" width="159" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ue-T1-8xd">
+                                <rect key="frame" x="108" y="245" width="159" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="159" id="9I9-9B-Bku"/>
                                 </constraints>
@@ -77,6 +77,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lV9-pe-2kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="289.5" y="276.5"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="FTS-QF-am8">
+            <objects>
+                <viewController id="v5n-sx-jJc" customClass="ContactViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uOU-zi-Lys"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yzs-WZ-tcE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aeh-82-VHW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kir-by-oFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="277"/>
         </scene>
     </scenes>
     <resources>
