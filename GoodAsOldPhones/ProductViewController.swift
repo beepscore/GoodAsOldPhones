@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ProductViewController.swift
 //  GoodAsOldPhones
 //
 //  Created by Steve Baker on 3/4/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ProductViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
 
