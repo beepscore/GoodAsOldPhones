@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DE3BAD381C8AB3BD005FF4D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BAD371C8AB3BD005FF4D1 /* AppDelegate.swift */; };
-		DE3BAD3A1C8AB3BD005FF4D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BAD391C8AB3BD005FF4D1 /* ViewController.swift */; };
 		DE3BAD3D1C8AB3BD005FF4D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3BAD3B1C8AB3BD005FF4D1 /* Main.storyboard */; };
 		DE3BAD3F1C8AB3BD005FF4D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE3BAD3E1C8AB3BD005FF4D1 /* Assets.xcassets */; };
 		DE3BAD421C8AB3BD005FF4D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE3BAD401C8AB3BD005FF4D1 /* LaunchScreen.storyboard */; };
 		DE3BAD4D1C8AB3BD005FF4D1 /* GoodAsOldPhonesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BAD4C1C8AB3BD005FF4D1 /* GoodAsOldPhonesTests.swift */; };
 		DE3BAD581C8AB3BD005FF4D1 /* GoodAsOldPhonesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BAD571C8AB3BD005FF4D1 /* GoodAsOldPhonesUITests.swift */; };
+		DE5A4CFA1C8ABF37000FACBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5A4CF91C8ABF37000FACBC /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		DE3BAD341C8AB3BD005FF4D1 /* GoodAsOldPhones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodAsOldPhones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3BAD371C8AB3BD005FF4D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE3BAD391C8AB3BD005FF4D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DE3BAD3C1C8AB3BD005FF4D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE3BAD3E1C8AB3BD005FF4D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE3BAD411C8AB3BD005FF4D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		DE3BAD531C8AB3BD005FF4D1 /* GoodAsOldPhonesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodAsOldPhonesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3BAD571C8AB3BD005FF4D1 /* GoodAsOldPhonesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodAsOldPhonesUITests.swift; sourceTree = "<group>"; };
 		DE3BAD591C8AB3BD005FF4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5A4CF91C8ABF37000FACBC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				DE3BAD371C8AB3BD005FF4D1 /* AppDelegate.swift */,
-				DE3BAD391C8AB3BD005FF4D1 /* ViewController.swift */,
+				DE5A4CF91C8ABF37000FACBC /* ViewController.swift */,
 				DE3BAD3B1C8AB3BD005FF4D1 /* Main.storyboard */,
 				DE3BAD3E1C8AB3BD005FF4D1 /* Assets.xcassets */,
 				DE3BAD401C8AB3BD005FF4D1 /* LaunchScreen.storyboard */,
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE3BAD3A1C8AB3BD005FF4D1 /* ViewController.swift in Sources */,
+				DE5A4CFA1C8ABF37000FACBC /* ViewController.swift in Sources */,
 				DE3BAD381C8AB3BD005FF4D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +485,7 @@
 				DE3BAD5E1C8AB3BD005FF4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE3BAD5F1C8AB3BD005FF4D1 /* Build configuration list for PBXNativeTarget "GoodAsOldPhonesTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +494,7 @@
 				DE3BAD611C8AB3BD005FF4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE3BAD621C8AB3BD005FF4D1 /* Build configuration list for PBXNativeTarget "GoodAsOldPhonesUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +503,7 @@
 				DE3BAD641C8AB3BD005FF4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
