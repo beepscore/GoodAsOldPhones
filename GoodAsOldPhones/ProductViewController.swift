@@ -13,6 +13,7 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
 
     @IBAction func addToCartButtonTapped(sender: AnyObject) {
+        print("add tapped")
     }
     
     override func viewDidLoad() {
