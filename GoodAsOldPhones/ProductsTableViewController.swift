@@ -17,6 +17,7 @@ class ProductsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell",
             forIndexPath: indexPath)
+        cell.textLabel?.text = "Phone type \(indexPath.row)"
         return cell
     }
 }
