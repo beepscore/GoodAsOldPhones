@@ -18,6 +18,7 @@ class ProductsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell",
             forIndexPath: indexPath)
         cell.textLabel?.text = "Phone type \(indexPath.row)"
+        cell.imageView?.image = UIImage(named: "image-cell\(indexPath.row)")
         return cell
     }
 }
