@@ -47,14 +47,15 @@ class ProductsTableViewController: UITableViewController {
         if segue.identifier == "ShowProduct" {
             let productViewController = segue.destinationViewController as? ProductViewController
             
-            if let productCell = sender as? UITableViewCell {
-                // prepareForSegue gets called before tableView didSelectRowAtIndexPath,
-                // so can't use didSelectRowAtIndexPath to set a variable for use by prepareForSegue
-                // Instead, use tableView indexPathForCell
-                if let indexPath = tableView.indexPathForCell(productCell) {
-                    productViewController?.productName = phones![indexPath.row].0
-                }
+            guard let productCell = sender as? UITableViewCell,
+                let indexPath = tableView.indexPathForCell(productCell) else {
+                    return
             }
+            
+            // prepareForSegue gets called before tableView didSelectRowAtIndexPath,
+            // so can't use didSelectRowAtIndexPath to set a variable for use by prepareForSegue
+            // Instead, use tableView indexPathForCell
+            productViewController?.productName = phones![indexPath.row].0
         }
     }
 
