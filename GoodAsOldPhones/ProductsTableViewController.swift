@@ -18,10 +18,10 @@ class ProductsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        phones = [ ("phone b", "image-cell1"),
-            ("1937 Desk Phone", "image-cell2"),
-            ("phone d", "image-cell3"),
-            ("phone e", "image-cell4")
+        phones = [ ("1907 Wall Set", "image-cell1"),
+            ("1921 Dial Phone", "image-cell2"),
+            ("1937 Desk Set", "image-cell3"),
+            ("1984 Motorola Portable", "image-cell4")
         ]
     }
 
