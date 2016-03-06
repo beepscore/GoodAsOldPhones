@@ -32,7 +32,9 @@ class ProductsTableViewController: UITableViewController {
         return phones!.count
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView,
+        cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
         let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell",
             forIndexPath: indexPath)
         cell.textLabel?.text = phones![indexPath.row].0
