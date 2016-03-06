@@ -52,8 +52,9 @@ class ProductsTableViewController: UITableViewController {
             
             if segue.identifier == "ShowProduct" {
                 let productViewController = segue.destinationViewController as? ProductViewController
-                let indexPath = tableView.indexPathForCell(productCell)
-                productViewController?.productName = phones![indexPath!.row].0
+                if let indexPath = tableView.indexPathForCell(productCell) {
+                    productViewController?.productName = phones![indexPath.row].0
+                }
             }
         }
     }
