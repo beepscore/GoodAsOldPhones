@@ -35,6 +35,9 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="5Pj-me-KOJ" kind="show" identifier="ShowProduct" id="G0O-by-xKR"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
