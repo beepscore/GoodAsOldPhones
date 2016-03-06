@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vOC-i4-fvd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7gU-jS-9Ph">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Products Table View Controller-->
+        <!--Phones-->
         <scene sceneID="LNP-Fy-24q">
             <objects>
                 <tableViewController id="vOC-i4-fvd" customClass="ProductsTableViewController" customModule="GoodAsOldPhones" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" textLabel="SsB-Fr-b0d" imageView="Fky-Gn-G7x" style="IBUITableViewCellStyleDefault" id="iM2-Mz-kg2">
-                                <rect key="frame" x="0.0" y="50" width="375" height="100"/>
+                                <rect key="frame" x="0.0" y="114" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iM2-Mz-kg2" id="bGj-uX-A3Z">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
@@ -42,11 +42,12 @@
                             <outlet property="delegate" destination="vOC-i4-fvd" id="2xx-3g-J9h"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Phones" id="LOY-PS-3NM"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bjv-bs-8nW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-215.5" y="283.5"/>
+            <point key="canvasLocation" x="596.5" y="283.5"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="nNU-NA-gaO">
@@ -118,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lV9-pe-2kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="289.5" y="276.5"/>
+            <point key="canvasLocation" x="1101.5" y="276.5"/>
         </scene>
         <!--Contact View Controller-->
         <scene sceneID="FTS-QF-am8">
@@ -217,7 +218,25 @@
                     </connections>
                 </scrollView>
             </objects>
-            <point key="canvasLocation" x="867.5" y="276.5"/>
+            <point key="canvasLocation" x="1679.5" y="276.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="baK-Dg-yXS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7gU-jS-9Ph" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TLf-H9-fRB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vOC-i4-fvd" kind="relationship" relationship="rootViewController" id="cbl-Jt-w6y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vmq-BM-WHh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="284"/>
         </scene>
     </scenes>
     <resources>
