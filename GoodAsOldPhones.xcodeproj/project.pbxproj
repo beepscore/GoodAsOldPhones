@@ -103,12 +103,12 @@
 			children = (
 				DE3BAD371C8AB3BD005FF4D1 /* AppDelegate.swift */,
 				DE230D2A1C8ACAF500BAAFC6 /* Assets.xcassets */,
-				DE5A4CF91C8ABF37000FACBC /* ProductViewController.swift */,
 				DE065AE91C8B42A400A1C7B1 /* ContactViewController.swift */,
-				DE3BAD3B1C8AB3BD005FF4D1 /* Main.storyboard */,
-				DE3BAD401C8AB3BD005FF4D1 /* LaunchScreen.storyboard */,
 				DE3BAD431C8AB3BD005FF4D1 /* Info.plist */,
+				DE3BAD401C8AB3BD005FF4D1 /* LaunchScreen.storyboard */,
+				DE3BAD3B1C8AB3BD005FF4D1 /* Main.storyboard */,
 				DEAC73BE1C8B554300DE0D70 /* ProductsTableViewController.swift */,
+				DE5A4CF91C8ABF37000FACBC /* ProductViewController.swift */,
 			);
 			path = GoodAsOldPhones;
 			sourceTree = "<group>";
