@@ -44,14 +44,13 @@ class ProductsTableViewController: UITableViewController {
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        // prepareForSegue gets called before tableView didSelectRowAtIndexPath,
-        // so can't use didSelectRowAtIndexPath to set a variable for use by prepareForSegue
-        // Instead, use tableView indexPathForCell
-        
-        if let productCell = sender as? UITableViewCell {
+        if segue.identifier == "ShowProduct" {
+            let productViewController = segue.destinationViewController as? ProductViewController
             
-            if segue.identifier == "ShowProduct" {
-                let productViewController = segue.destinationViewController as? ProductViewController
+            if let productCell = sender as? UITableViewCell {
+                // prepareForSegue gets called before tableView didSelectRowAtIndexPath,
+                // so can't use didSelectRowAtIndexPath to set a variable for use by prepareForSegue
+                // Instead, use tableView indexPathForCell
                 if let indexPath = tableView.indexPathForCell(productCell) {
                     productViewController?.productName = phones![indexPath.row].0
                 }
