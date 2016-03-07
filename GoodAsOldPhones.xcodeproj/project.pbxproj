@@ -52,6 +52,7 @@
 		DE3BAD591C8AB3BD005FF4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE5A4CF91C8ABF37000FACBC /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		DE6562F91C8CFE1E00064299 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DE6562FB1C8D0F8B00064299 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DEAC73BE1C8B554300DE0D70 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +84,7 @@
 		DE3BAD2B1C8AB3BD005FF4D1 = {
 			isa = PBXGroup;
 			children = (
+				DE6562FB1C8D0F8B00064299 /* README.md */,
 				DE3BAD361C8AB3BD005FF4D1 /* GoodAsOldPhones */,
 				DE3BAD4B1C8AB3BD005FF4D1 /* GoodAsOldPhonesTests */,
 				DE3BAD561C8AB3BD005FF4D1 /* GoodAsOldPhonesUITests */,
