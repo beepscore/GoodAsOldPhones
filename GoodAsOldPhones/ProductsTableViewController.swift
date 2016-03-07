@@ -11,14 +11,14 @@ import UIKit
 class ProductsTableViewController: UITableViewController {
 
     // we don't have image-cell0, so use image-cell1
-    var phones : [Product]?
+    var products : [Product]?
 
     var selectedRow : NSInteger = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        phones = [ Product.init(name: "1907 Wall Set",
+        products = [ Product.init(name: "1907 Wall Set",
             imageName: "phone-fullscreen1", cellImageName: "image-cell1"),
             Product.init(name: "1921 Dial Phone",
                 imageName: "phone-fullscreen2", cellImageName: "image-cell2"),
@@ -28,10 +28,10 @@ class ProductsTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if phones == nil {
+        if products == nil {
             return 0
         }
-        return phones!.count
+        return products!.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -39,7 +39,7 @@ class ProductsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell",
             forIndexPath: indexPath)
         
-        if let product = phones?[indexPath.row] {
+        if let product = products?[indexPath.row] {
             cell.textLabel?.text = product.name
             cell.imageView?.image = UIImage(named: (product.cellImageName)!)
         }
@@ -59,7 +59,7 @@ class ProductsTableViewController: UITableViewController {
             // prepareForSegue gets called before tableView didSelectRowAtIndexPath,
             // so can't use didSelectRowAtIndexPath to set a variable for use by prepareForSegue
             // Instead, use tableView indexPathForCell
-            productViewController?.product = phones![indexPath.row]
+            productViewController?.product = products![indexPath.row]
         }
     }
 
