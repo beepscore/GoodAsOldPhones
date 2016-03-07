@@ -15,6 +15,7 @@
 		DE3BAD4D1C8AB3BD005FF4D1 /* GoodAsOldPhonesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BAD4C1C8AB3BD005FF4D1 /* GoodAsOldPhonesTests.swift */; };
 		DE3BAD581C8AB3BD005FF4D1 /* GoodAsOldPhonesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE3BAD571C8AB3BD005FF4D1 /* GoodAsOldPhonesUITests.swift */; };
 		DE5A4CFA1C8ABF37000FACBC /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5A4CF91C8ABF37000FACBC /* ProductViewController.swift */; };
+		DE6562FA1C8CFE1E00064299 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6562F91C8CFE1E00064299 /* Product.swift */; };
 		DEAC73BF1C8B554300DE0D70 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAC73BE1C8B554300DE0D70 /* ProductsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		DE3BAD571C8AB3BD005FF4D1 /* GoodAsOldPhonesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodAsOldPhonesUITests.swift; sourceTree = "<group>"; };
 		DE3BAD591C8AB3BD005FF4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE5A4CF91C8ABF37000FACBC /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		DE6562F91C8CFE1E00064299 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		DEAC73BE1C8B554300DE0D70 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				DE3BAD3B1C8AB3BD005FF4D1 /* Main.storyboard */,
 				DEAC73BE1C8B554300DE0D70 /* ProductsTableViewController.swift */,
 				DE5A4CF91C8ABF37000FACBC /* ProductViewController.swift */,
+				DE6562F91C8CFE1E00064299 /* Product.swift */,
 			);
 			path = GoodAsOldPhones;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			files = (
 				DE5A4CFA1C8ABF37000FACBC /* ProductViewController.swift in Sources */,
 				DEAC73BF1C8B554300DE0D70 /* ProductsTableViewController.swift in Sources */,
+				DE6562FA1C8CFE1E00064299 /* Product.swift in Sources */,
 				DE3BAD381C8AB3BD005FF4D1 /* AppDelegate.swift in Sources */,
 				DE065AEA1C8B42A400A1C7B1 /* ContactViewController.swift in Sources */,
 			);
