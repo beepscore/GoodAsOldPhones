@@ -51,7 +51,7 @@ class ProductsTableViewController: UITableViewController {
                 let indexPath = tableView.indexPathForCell(productCell) else {
                     return
             }
-            
+
             // prepareForSegue gets called before tableView didSelectRowAtIndexPath,
             // so can't use didSelectRowAtIndexPath to set a variable for use by prepareForSegue
             // Instead, use tableView indexPathForCell
