@@ -9,8 +9,18 @@
 import Foundation
 
 class Product {
-
+    
     var name: String?
-    var productImageName: String?
+    var imageName: String?
     var cellImageName: String?
+    
+    init(name: String,
+        imageName: String,
+        cellImageName: String) {
+            
+            self.name = name
+            self.imageName = imageName
+            self.cellImageName = cellImageName
+    }
+
 }
