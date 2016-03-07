@@ -20,7 +20,9 @@ class ProductViewController: UIViewController {
         super.viewDidLoad()
         if product != nil {
             productNameLabel.text = product!.name
-            productImageView.image = UIImage(named: (product!.imageName)!)
+            if let imageName = product!.imageName {
+                productImageView.image = UIImage(named: imageName)
+            }
         }
     }
 
