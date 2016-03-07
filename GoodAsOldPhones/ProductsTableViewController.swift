@@ -11,20 +11,22 @@ import UIKit
 class ProductsTableViewController: UITableViewController {
 
     // we don't have image-cell0, so use image-cell1
-    var phones : [(String, String)]?
+    var phones : [Product]?
 
     var selectedRow : NSInteger = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        phones = [ ("1907 Wall Set", "image-cell1"),
-            ("1921 Dial Phone", "image-cell2"),
-            ("1937 Desk Set", "image-cell3"),
-            ("1984 Motorola Portable", "image-cell4")
+        phones = [ Product.init(name: "1907 Wall Set",
+            imageName: "phone-fullscreen1", cellImageName: "image-cell1"),
+            Product.init(name: "1921 Dial Phone",
+                imageName: "phone-fullscreen2", cellImageName: "image-cell2"),
+            Product.init(name: "1937 Desk Set", imageName: "phone-fullscreen3", cellImageName: "image-cell3"),
+            Product.init(name: "1984 Motorola Portable", imageName: "phone-fullscreen4", cellImageName: "image-cell4")
         ]
     }
-
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if phones == nil {
             return 0
@@ -37,8 +39,8 @@ class ProductsTableViewController: UITableViewController {
 
         let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell",
             forIndexPath: indexPath)
-        cell.textLabel?.text = phones![indexPath.row].0
-        cell.imageView?.image = UIImage(named: phones![indexPath.row].1)
+        cell.textLabel?.text = phones![indexPath.row].name
+        cell.imageView?.image = UIImage(named: (phones![indexPath.row].cellImageName)!)
         return cell
     }
 
@@ -55,7 +57,7 @@ class ProductsTableViewController: UITableViewController {
             // prepareForSegue gets called before tableView didSelectRowAtIndexPath,
             // so can't use didSelectRowAtIndexPath to set a variable for use by prepareForSegue
             // Instead, use tableView indexPathForCell
-            productViewController?.productName = phones![indexPath.row].0
+            productViewController?.product = phones![indexPath.row]
         }
     }
 

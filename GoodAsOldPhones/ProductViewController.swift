@@ -14,12 +14,14 @@ class ProductViewController: UIViewController {
 
     @IBOutlet weak var productImageView: UIImageView!
 
-    var productName: String?
+    var product: Product?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        productNameLabel.text = productName
-        productImageView.image = UIImage(named: "phone-fullscreen3")
+        if product != nil {
+            productNameLabel.text = product!.name
+            productImageView.image = UIImage(named: (product!.imageName)!)
+        }
     }
 
     @IBAction func addToCartButtonTapped(sender: AnyObject) {
